@@ -1,3 +1,117 @@
-html, body{
-    background-color: #344a59;
+*,
+html,
+body {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(#ffffff, #ebecf0);
+  min-width: 280px;
+  max-width: 550px;
+}
+
+/* header */
+
+.head-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 5em;
+}
+
+.head-container img {
+  height: 75%;
+  padding: 0.8em;
+}
+
+/* Profile image */
+
+.dog-image,
+.profil-image {
+  position: relative;
+  width: 100%;
+  height: 700px;
+}
+
+.profil-image {
+  border-radius: 1.5em;
+}
+
+.name-bio {
+  position: absolute;
+  bottom: 9em;
+  color: #f8f8f8;
+  margin: 1em;
+}
+
+.profil-name,
+.profil-bio {
+  margin: 0.125em 0;
+}
+
+.profil-name {
+  font-size: 1.725rem;
+}
+
+.profil-bio {
+  font-size: 1.125rem;
+}
+
+/* Stamp */
+
+.stamp img {
+  position: absolute;
+  margin-left: 1em;
+  transform: rotate(-20deg);
+  height: 7em;
+  top: 7.8em;
+}
+
+.hidden {
+  display: none;
+}
+
+/* footer */
+
+footer,
+.like-dislike {
+  width: 100%;
+  height: 8em;
+}
+
+.like-dislike {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  height: 5em;
+  width: 5em;
+}
+
+.btn img {
+  height: 1.8em;
+}
+
+.like:hover,
+.like:active {
+  background-color: #dbfff4;
+}
+
+.dislike:hover,
+.dislike:active {
+  background-color: #ffe7ef;
 }

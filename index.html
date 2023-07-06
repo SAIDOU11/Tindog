@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-   <script type="module" src="index.js"></script> 
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tindog App</title>
+  </head>
+  <body>
+    <header>
+      <div class="head-container">
+        <img src="images/icon-profile.png" alt="Icon profile of Tindog App" />
+        <img src="images/logo.png" alt="Logo of Tindog App" />
+        <img src="images/icon-chat.png" alt="Send a message" />
+      </div>
+    </header>
+    <main>
+      <div id="dog-image">
+        <img class="profil-image" src="images/dog-rex.jpg" alt="Profil pic" />
+        <div class="name-bio">
+          <p class="profil-name">${name}, ${age}</p>
+          <p class="profil-bio">${bio}</p>
+        </div>
+      </div>
+      <div class="stamp hidden">
+        <img src="images/badge-like.png" alt="Badge like" />
+      </div>
+      <div class="stamp hidden">
+        <img src="images/badge-nope.png" alt="Badge nope" />
+      </div>
+    </main>
+    <footer>
+      <div class="like-dislike">
+        <button class="btn dislike">
+          <img src="images/icon-cross.png" alt="dislike" />
+        </button>
+        <button class="btn like">
+          <img src="images/icon-heart.png" alt="like" />
+        </button>
+      </div>
+    </footer>
+    <script type="module" src="index.js"></script>
+  </body>
 </html>
