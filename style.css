@@ -21,7 +21,6 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   height: 5em;
 }
 
@@ -31,6 +30,11 @@ body {
 }
 
 /* Profile image */
+header,
+main,
+footer {
+  margin: 0 1em;
+}
 
 .dog-image,
 .profil-image {
@@ -43,7 +47,7 @@ body {
   border-radius: 1.5em;
 }
 
-.name-bio {
+#name-bio {
   position: absolute;
   bottom: 9em;
   color: #f8f8f8;
@@ -65,7 +69,8 @@ body {
 
 /* Stamp */
 
-.stamp img {
+.stamp-like img,
+.stamp-none img {
   position: absolute;
   margin-left: 1em;
   transform: rotate(-20deg);
@@ -81,7 +86,6 @@ body {
 
 footer,
 .like-dislike {
-  width: 100%;
   height: 8em;
 }
 
@@ -106,12 +110,17 @@ footer,
   height: 1.8em;
 }
 
-.like:hover,
-.like:active {
+#dislike:hover,
+#like:hover {
+  font-size: 0.9rem;
+}
+
+#like:hover,
+#like:active {
   background-color: #dbfff4;
 }
 
-.dislike:hover,
-.dislike:active {
+#dislike:hover,
+#dislike:active {
   background-color: #ffe7ef;
 }
