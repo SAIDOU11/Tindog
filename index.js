@@ -1,15 +1,22 @@
-import { like, dislike } from "./utils.js";
-import dogs from "./data.js";
-import Dog from "./Dogs.js";
+import dogsData from "./data.js";
+import Dog from "./dogs.js";
 
-console.log(dogs);
+let dogArray = ["Rex", "Bella", "Teddy"];
+let isWaiting = false;
 
-const firstDog = new Dog(dogs[0]);
+const getNewDog = () => {
+  isWaiting = true;
+  const nextDog = dogsData[dogArray.shift()];
+  return nextDog ? new Dog(nextDog) : {};
+};
+
+const choice = () => {
+  firstDog.renderNameBio();
+};
+
+let firstDog = getNewDog();
 
 document.getElementById("dog-image").innerHTML = firstDog.renderNameBio();
 
 // let hasBeenSwiped = false;
 // let hasBeenLiked = false;
-
-like();
-dislike();
