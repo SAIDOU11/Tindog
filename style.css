@@ -12,7 +12,8 @@ body {
   font-family: "Poppins", sans-serif;
   background-image: linear-gradient(#ffffff, #ebecf0);
   min-width: 280px;
-  max-width: 550px;
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 .find-love,
