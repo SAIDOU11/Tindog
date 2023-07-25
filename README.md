@@ -1,5 +1,5 @@
 # The Frontend Developer Career Path
 
-# Solo Project Module 7 Scrimba Bootcamp
+# Module 7 Scrimba Frontend Developer Career Path. Next-level JavaScript.
 
 - Tindog
